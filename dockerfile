@@ -6,6 +6,8 @@ RUN apt -y update && apt -y install git
 RUN pip install yapf pycodestyle pydocstyle
 # only for cli (vscode extentions work for editor)
 RUN pip install flake8 autopep8
+# install numpy
+RUN pip install numpy
 
 # C/C++
 RUN apt -y install cppcheck clang clang-format
